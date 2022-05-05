@@ -1,3 +1,9 @@
+import Swiper, { Navigation, Pagination } from 'swiper';
+ // import Swiper and modules styles
+ import 'swiper/css';
+ import 'swiper/css/navigation';
+ import 'swiper/css/pagination';
+
 let navbar = document.querySelector('.header .navbar');
 let searchForm = document.querySelector('.header .search-form');
 let loginForm = document.querySelector('.header .login-form');
@@ -41,6 +47,18 @@ document.querySelector('#close-contact-info').onclick = () =>{
     loginForm.classList.remove('active');
     contactInfo.classList.remove('active');
  }
+
+//   JS SWIPER----------------------------
+
+var swiper = new Swiper(".home-slider", {
+   loop:true,
+   grabCursor:true,
+   navigation: {
+     nextEl: ".swiper-button-next",
+     prevEl: ".swiper-button-prev",
+   },
+});
+console.log(Swiper);
 
 
     

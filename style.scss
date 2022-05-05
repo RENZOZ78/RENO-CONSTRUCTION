@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;1,200;1,600&family=Yuji+Mai&display=swap');
 
 
+
 :root{
     --yellow: #f5bf23;
     --black: #111;
@@ -34,7 +35,7 @@
 @mixin graphText($graphSize){
     font-size: $graphSize;
     color: var(--light-color);
-    line-height: 1.5;
+    line-height: 2;
 
 }
 
@@ -52,6 +53,10 @@
        background: var(--black);
        color:var(--white);
     }
+ }
+
+ section{
+    padding:5rem 10%;
  }
 
 .btn{
@@ -311,8 +316,70 @@ html{
      }
 }
 
-// fin contact--------------------
 
+// HOME SLIDER--------------------
+.home{
+    padding:0;
+ 
+    .slide{
+       min-height: 60rem;
+       display: flex;
+       align-items: center;
+       position: relative;
+       background-size: cover !important;
+       background-position: center !important;
+ 
+       &::before{
+          content: '';
+          position: absolute;
+          top:0; left:0;
+          height: 100%;
+          width: 100%;
+          background: linear-gradient(90deg, var(--white), transparent);
+       }
+ 
+       .content{
+          width: 50rem;
+          position: relative;
+ 
+          h3{
+             @include titleText(6rem);
+             text-transform: uppercase;
+          }
+ 
+          p{
+             @include graphText(1.4rem);
+             padding:1rem 0;
+          }
+       }
+    }
+ 
+    .swiper-button-next,
+    .swiper-button-prev{
+       top:initial;
+       bottom: 0;
+       left: initial;
+       right: 0;
+       height: 7rem;
+       width: 7rem;
+       line-height: 7rem;
+       background: var(--white);
+ 
+       &:hover{
+          background: var(--yellow);
+       }
+    }
+ 
+    .swiper-button-next::after,
+    .swiper-button-prev::after{
+       font-size: 2rem;
+       color:var(--black);
+    }
+ 
+    .swiper-button-prev{
+       right:7rem;
+    }
+ }
 
 
 
@@ -322,12 +389,19 @@ html{
     .header{
         padding:1.5rem 2rem;
     }
+    section{
+        padding:3rem 5%;
+     }
 }
 
 @media (max-width:991px){
     html{
         font-size: 55%;
     }
+
+    section{
+        padding:3rem 2rem;
+     }
 
     .header{
 

@@ -42,6 +42,7 @@ window.onscroll = () =>{
    contactInfo.classList.remove('active');
 }
 
+# JS SWIPER----------------------------
 var swiper = new Swiper(".home-slider", {
    loop:true,
    grabCursor:true,

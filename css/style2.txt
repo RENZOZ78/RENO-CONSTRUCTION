@@ -106,6 +106,7 @@ section{
    }
 }
 
+# HEADER----------------------
 .header{
    position: sticky;
    top:0; left:0; right:0;
@@ -255,6 +256,7 @@ section{
    }
 }
 
+# contact----------------------------
 .contact-info{
    position: fixed;
    top:0; right:0;
@@ -313,7 +315,10 @@ section{
       }
    }
 }
+# fin de contact-------------------
 
+
+# home--------------------------
 .home{
    padding:0;
 
@@ -377,6 +382,8 @@ section{
    }
 }
 
+
+# ABOUT----------------------------
 .about{
 
    .row{
