@@ -1,8 +1,8 @@
-import Swiper, { Navigation, Pagination } from 'swiper';
- // import Swiper and modules styles
- import 'swiper/css';
- import 'swiper/css/navigation';
- import 'swiper/css/pagination';
+// import Swiper, { Navigation, Pagination } from 'swiper';
+//  // import Swiper and modules styles
+//  import 'swiper/css';
+//  import 'swiper/css/navigation';
+//  import 'swiper/css/pagination';
 
 let navbar = document.querySelector('.header .navbar');
 let searchForm = document.querySelector('.header .search-form');
@@ -90,6 +90,26 @@ var swiper = new Swiper(".blogs-slider", {
       },
       991: {
         slidesPerView: 3,
+      },
+   },
+});
+
+var swiper = new Swiper(".logo-slider", {
+   loop:true,
+   grabCursor:true,
+   spaceBetween: 20,
+   breakpoints: {
+      450: {
+         slidesPerView: 2,
+       },
+      640: {
+        slidesPerView: 3,
+      },
+      768: {
+        slidesPerView: 4,
+      },
+      1000: {
+        slidesPerView: 5,
       },
    },
 });

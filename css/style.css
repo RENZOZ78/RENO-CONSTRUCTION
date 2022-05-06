@@ -550,6 +550,27 @@ html {
         color: var(--light-color);
         line-height: 2; }
 
+.logo-container {
+  text-align: center; }
+  .logo-container img {
+    height: 10rem;
+    pointer-events: none;
+    user-select: none; }
+
+.footer {
+  text-align: center;
+  padding-bottom: 10rem; }
+  .footer .links .btn {
+    margin: .5rem; }
+  .footer .credit {
+    font-size: 2rem;
+    color: var(--black);
+    text-transform: capitalize;
+    margin-top: 2rem;
+    padding-top: 1rem; }
+    .footer .credit span {
+      color: var(--yellow); }
+
 @media (max-width: 1200px) {
   .header {
     padding: 1.5rem 2rem; }

@@ -730,6 +730,37 @@ html{
    }
 }
 
+//LOGO CLIENT-------------
+.logo-container{
+   text-align: center;
+
+   img{
+      height: 10rem;
+      pointer-events: none;
+      user-select: none;
+   }
+}
+
+//FOOTER--------
+.footer{
+   text-align: center;
+   padding-bottom: 10rem;
+
+   .links .btn{
+      margin:.5rem;
+   }
+
+   .credit{
+      @include titleText(2rem);
+      margin-top: 2rem;
+      padding-top: 1rem;
+
+      span{
+         color:var(--yellow);
+      }
+   }
+}
+
 
 // media queries---------------------------------------------------
 @media (max-width:1200px){
