@@ -9,6 +9,9 @@
     <!-- font awesome -->
     <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" >
 
+    <!-- lightgallery -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
     <!-- swiperjs -->
     <link
   rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
@@ -199,18 +202,176 @@
    </div>
 
 </section>
-
-
      <!-- FIN SECTION ABOUT -------------------------->
+
+
+     <!-- SECTION SERVICES  --------------------->
+
+<section class="services" id="services">
+
+   <h1 class="heading"> Nos serices </h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <img src="images/service-1.png" alt="">
+         <h3>Construction de bâtiment</h3>
+         <p>Nous mettons tout en oeuvre pour construire vos bâtiments dans les règles de l'art </p>
+      </div>
+
+      <div class="box">
+         <img src="images/service-2.png" alt="">
+         <h3>Rénovation de maison</h3>
+         <p>Vous avez besoin de refaire votre toiture, vos murs, la peinture... nous effectuons otut ce qu'il faut pour redonner a votre maison toute sa valeur</p>
+      </div>
+
+      <div class="box">
+         <img src="images/service-3.png" alt="">
+         <h3>architechture</h3>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, necessitatibus.</p>
+      </div>
+
+      <div class="box">
+         <img src="images/service-4.png" alt="">
+         <h3>fourniture de materiel</h3>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, necessitatibus.</p>
+      </div>
+
+      <div class="box">
+         <img src="images/service-5.png" alt="">
+         <h3>consultant btp</h3>
+         <p>Nos consultants mettent leur expertise à votre service pour vous accompagner pendant toute la durée de vos travaux</p>
+      </div>
+
+      <div class="box">
+         <img src="images/service-6.png" alt="">
+         <h3>design d'intérieur</h3>
+         <p>Avec un design intérieur que vous souhaité...Nous redonnons une deuxiéme vie a l'interieur de votre maison</p>
+      </div>
+
+      <div class="box">
+         <img src="images/service-7.png" alt="">
+         <h3>maintenance</h3>
+         <p>Vous avez des problemes suite a des travaux? Nous sommes à votre disposition pour intervenir dans les plus brefs délais</p>
+      </div>
+
+      <div class="box">
+         <img src="images/service-8.png" alt="">
+         <h3>Renovation de bâtiment</h3>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, necessitatibus.</p>
+      </div>
+      
+   </div>
+
+</section>
+<!-- FIN SECTION SERVICES -->
+
+<!-- SECTION PROJET  -->
+<section class="projects" id="projects">
+
+   <h1 class="heading"> our projects </h1>
+
+   <div class="box-container">
+
+      <a href="images/project-1.jpg" class="box">
+         <div class="image">
+            <img src="images/project-1.jpg" alt="">
+         </div>
+         <div class="content">
+            <div class="info">
+               <h3>Ecologie</h3>
+               <p>construction, design</p>
+            </div>
+            <i class="fas fa-plus"></i>
+         </div>
+      </a>
+
+      <a href="images/project-2.jpg" class="box">
+         <div class="image">
+            <img src="images/project-2.jpg" alt="">
+         </div>
+         <div class="content">
+            <div class="info">
+               <h3>Matériel</h3>
+               <p>construction, design</p>
+            </div>
+            <i class="fas fa-plus"></i>
+         </div>
+      </a>
+
+      <a href="images/project-3.jpg" class="box">
+         <div class="image">
+            <img src="images/project-3.jpg" alt="">
+         </div>
+         <div class="content">
+            <div class="info">
+               <h3>Design</h3>
+               <p>construction, design</p>
+            </div>
+            <i class="fas fa-plus"></i>
+         </div>
+      </a>
+
+      <a href="images/project-4.jpg" class="box">
+         <div class="image">
+            <img src="images/project-4.jpg" alt="">
+         </div>
+         <div class="content">
+            <div class="info">
+               <h3>Logistique</h3>
+               <p>construction, design</p>
+            </div>
+            <i class="fas fa-plus"></i>
+         </div>
+      </a>
+
+      <a href="images/project-5.jpg" class="box">
+         <div class="image">
+            <img src="images/project-5.jpg" alt="">
+         </div>
+         <div class="content">
+            <div class="info">
+               <h3>Sécurité</h3>
+               <p>construction, design</p>
+            </div>
+            <i class="fas fa-plus"></i>
+         </div>
+      </a>
+
+      <a href="images/project-6.jpg" class="box">
+         <div class="image">
+            <img src="images/project-6.jpg" alt="">
+         </div>
+         <div class="content">
+            <div class="info">
+               <h3>Savoir-faire</h3>
+               <p>construction, design</p>
+            </div>
+            <i class="fas fa-plus"></i>
+         </div>
+      </a>
+
+   </div>
+
+</section>
+
+<!-- FIN SECTION PRIOJET -->
 
 
         
         <!-- custom js file link -->
         <script src="js/script.js" ></script>
 
+        <!-- light gallery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+        
+        <!-- js lighgalley qui permet de slider entre les differentes images de box-container-->
+      <script>
+         lightGallery(document.querySelector('.projects .box-container'));
+      </script>
+
         <!-- swiperjs -->
         <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-
 
 
 

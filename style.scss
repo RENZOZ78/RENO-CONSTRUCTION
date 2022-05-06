@@ -442,6 +442,102 @@ html{
    }
 }
 
+//SERVICES--------------------------
+.services{
+   background: var(--light-bg);
+
+   .box-container{
+      @include grid(25rem);
+
+      .box{
+         text-align: center;
+         padding:3rem;
+         background: var(--white);
+         box-shadow: var(--box-shadow);
+         border:var(--border);
+
+         &:hover img{
+            transform: translateY(-1rem);
+         }
+
+         img{
+            height: 7rem;
+            margin-bottom: .5rem;
+            transition:.2s linear;
+         }
+
+         h3{
+            @include titleText(1.7rem);
+            padding:1rem 0;
+         }
+
+         p{
+            @include graphText(1.4rem);
+         }
+      }
+   }
+}
+
+.projects{
+   background: var(--black);
+
+   .heading{
+      color:var(--white);
+   }
+
+   .box-container{
+      @include grid(30rem);
+
+      .box{
+         cursor: initial;
+
+         &:hover .image img{
+            transform: scale(1.1);
+         }
+
+         .image{
+            height: 40rem;
+            overflow: hidden;
+
+            img{
+               height: 100%;
+               width: 100%;
+               object-fit: cover;
+               transition:.2s linear;
+            }
+         }
+
+         .content{
+            display: flex;
+            background: var(--white);
+            justify-content: space-between;
+
+            .info{
+               padding:1rem 2rem;
+
+               h3{
+                  @include titleText(1.7rem);
+               }
+
+               p{
+                  @include graphText(1.5rem);
+               }
+            }
+
+            i{
+               width: 7.5rem;
+               font-size: 3rem;
+               background: var(--yellow);
+               color:var(--white);
+               cursor: pointer;
+               text-align: center;
+               line-height: 7.5rem;
+            }
+         }
+      }
+   }
+}
+
 
 
 // media queries---------------------------------------------------
