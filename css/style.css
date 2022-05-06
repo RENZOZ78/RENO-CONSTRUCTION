@@ -9,13 +9,13 @@
   --border: 0.1rem solid rgba(0, 0, 0, 0.3); }
 
 * {
-  font-family: 'Poppins', serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   outline: none;
   border: none;
-  transition: all .2s linear; }
+  text-decoration: none; }
 
 section {
   padding: 5rem 10%; }
@@ -485,6 +485,38 @@ html {
           font-size: 1.4rem;
           color: var(--light-color);
           line-height: 2; }
+
+.contact {
+  background: var(--black); }
+  .contact .heading {
+    color: var(--white); }
+  .contact .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem; }
+    .contact .row .map {
+      flex: 1 1 41rem;
+      width: 100%; }
+    .contact .row form {
+      flex: 1 1 41rem;
+      background: var(--white);
+      padding: 2rem; }
+      .contact .row form h3 {
+        font-size: 2.5rem;
+        color: var(--black);
+        text-transform: capitalize; }
+      .contact .row form .box {
+        margin: .7rem 0;
+        width: 100%;
+        padding: 1.5rem 0;
+        border-bottom: var(--border);
+        font-size: 1.6rem;
+        color: var(--light-color); }
+        .contact .row form .box:focus {
+          border-color: var(--yellow); }
+      .contact .row form textarea {
+        height: 15rem;
+        resize: none; }
 
 @media (max-width: 1200px) {
   .header {
