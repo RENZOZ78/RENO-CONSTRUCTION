@@ -258,7 +258,8 @@ html {
     align-items: center;
     position: relative;
     background-size: cover !important;
-    background-position: center !important; }
+    /* background-position: center !important; */
+    background-position: right !important }
     .home .slide::before {
       content: '';
       position: absolute;
@@ -516,7 +517,12 @@ html {
           border-color: var(--yellow); }
       .contact .row form textarea {
         height: 15rem;
-        resize: none; }
+        resize: none;
+      }
+        /* .carte{
+          width: 100%;
+        } */
+       
 
 .blogs {
   background: var(--light-bg); }
